@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Administración</span>    
+    <span class="toobar-spacer"></span>
+    <span>Restaurante - El Buen Sabor</span>
+    <span class="toobar-spacer"></span>
+    <mat-icon class="material-icon" aria-hidden="false" matTooltip="Cerrar Sesion" style="cursor: pointer" (click)="signOut()">logout</mat-icon>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <button mat-raised-button [routerLink]="['/admin/articulo']">Articulo</button> &nbsp;
+    <button mat-raised-button [routerLink]="['/admin/manofacturado']">Productos manufacturados</button> &nbsp;
+    <button mat-raised-button [routerLink]="['/admin/users']">Usuarios</button> &nbsp;
+    <button mat-raised-button [routerLink]="['/admin/clientes']">Clientes</button> &nbsp;
+    <button mat-raised-button [routerLink]="['/admin/rubro']">Rubros</button> &nbsp;
+    <button mat-raised-button [routerLink]="['/admin/horario']">Horarios</button> &nbsp;
+    <button mat-raised-button [routerLink]="['/admin/facturas']">Ver Facturas</button> &nbsp;    
+    <button mat-raised-button [routerLink]="['/admin/pedidos']">Pedidos</button> &nbsp;
+    <button mat-raised-button [routerLink]="['/admin/pedidosxfacturar']">Pedidos por facturar</button> &nbsp;
+    <button mat-raised-button [routerLink]="['/admin/totalsales']">Productos mas Vendidos</button> &nbsp;
+    <button mat-raised-button [routerLink]="['/cocina']">Cocina</button> &nbsp;
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
